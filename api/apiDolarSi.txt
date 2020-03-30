@@ -1,0 +1,3 @@
+import requests
+#TRabajando con la API de dolarsi
+r = requests.get("https://www.dolarsi.com/api/api.php?type=cotizador")

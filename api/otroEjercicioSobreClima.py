@@ -4,7 +4,7 @@ import requests
 # units: La medida en que se muestran los datos, por defecto es en F, si ponemos metrics cambia a C
 # appid: es el apikey
 #
-r = requests.get("https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,AR&units=metric&appid=a41c27c9feb20967e253140e845e2322")
+r = requests.get("https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,AR&units=metric&appid=")
 print("Codigo de estado: ",r.status_code)
 temperatura = r.json()["main"]["temp"]
 presion = r.json()["main"]["pressure"]
